@@ -1,6 +1,6 @@
 # 📝 ToDoApi (.NET 8 + MySQL)
 
-A simple REST API for managing ToDo tasks, built with ASP.NET Core 8, Entity Framework Core, and MySQL. The project includes full CRUD functionality, task filtering, percent completion, unit tests, and optional Docker support.
+A simple REST API for managing ToDo tasks, built with ASP.NET Core 8, Entity Framework Core, and MySQL. The project includes full CRUD functionality, task filtering, percent completion, unit tests.
 
 ## ✅ Features
 
