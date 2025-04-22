@@ -35,6 +35,5 @@ A simple REST API for managing ToDo tasks, built with ASP.NET Core 8, Entity Fra
  ┣ 📁 Services
  ┣ 📁 Data
  ┣ 📁 Tests
- ┣ 🐳 Dockerfile (optional)
  ┣ appsettings.json
  ┣ Program.cs
