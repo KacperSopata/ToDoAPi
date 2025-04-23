@@ -17,8 +17,13 @@ namespace ToDoApi.Services
 
         public async Task<ToDo?> GetByIdAsync(int id) => await _repo.GetByIdAsync(id);
 
-        public async Task<List<ToDo>> GetIncomingTodayAsync() =>
-            await _repo.GetByDueDateRangeAsync(DateTime.Today, DateTime.Today);
+        public async Task<List<ToDo>> GetIncomingTodayAsync()
+        {
+            var todayStart = DateTime.Today; // początek dnia: 23.04.2025 00:00:00
+            var todayEnd = todayStart.AddDays(1).AddSeconds(-1); // koniec dnia: 23.04.2025 23:59:59
+            return await _repo.GetByDueDateRangeAsync(todayStart, todayEnd);
+        }
+
 
         public async Task<List<ToDo>> GetIncomingTomorrowAsync()
         {
